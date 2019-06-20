@@ -26,7 +26,7 @@ app.post('/logout', dao.logOut);
 app.post('/viewLocation', dao.viewLocation);
 
 app.get('/', function(req, res, next) {
-    res.render('index', { title: 'Express' });
+    res.render('index', { title: 'Telecom' });
 });
 
 module.exports = app;
