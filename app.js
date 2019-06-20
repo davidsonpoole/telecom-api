@@ -25,8 +25,8 @@ app.post('/login', dao.logIn);
 app.post('/logout', dao.logOut);
 app.post('/viewLocation', dao.viewLocation);
 
-app.get('/', function(req, res, next) {
-    res.render('index', { title: 'Express' });
+app.get('/', (req, res) => {
+	res.send('HEY!')
 });
 
 module.exports = app;
