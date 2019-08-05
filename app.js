@@ -21,9 +21,9 @@ app.post('/downgrade', dao.downgrade);
 app.post('/parentalControls', dao.toggleParentalControls);
 app.post('/setViewingPrefs', dao.setViewingPrefs);
 app.post('/setInterests', dao.setInterests);
-app.post('/login', dao.logIn);
-app.post('/logout', dao.logOut);
-app.post('/viewLocation', dao.viewLocation);
+app.post('/viewInterests', dao.viewInterests);
+app.post('/viewPrefs', dao.viewPrefs);
+app.post('/viewOutage', dao.viewOutage);
 
 app.get('/', function(req, res, next) {
     res.render('index', { title: 'Telecom' });

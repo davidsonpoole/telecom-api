@@ -6,7 +6,8 @@ if (!connection) {
         host: 'industrychallenge.cdzkywzuhila.us-east-1.rds.amazonaws.com',
         user: 'davpoole1',
         password: 'password',
-        database: 'industryChallenge'
+        database: 'industryChallenge',
+	multipleStatements: true
     });
     connection.connect();
 }
